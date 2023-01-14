@@ -41,7 +41,7 @@ public class DepositCalculator {
 
         System.out.println("Введите сумму вклада в рублях:");
 
-        checkInputUser(scanner, DepositCalculator. PATTER_DOUBLE, "Введите число больше 0!");
+        checkInputUser(scanner, DepositCalculator.PATTER_DOUBLE, "Введите число больше 0!");
         double amount = scanner.nextDouble();
 
         System.out.println("Введите срок вклада в годах:");
