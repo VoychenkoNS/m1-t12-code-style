@@ -46,12 +46,12 @@ public class DepositCalculator {
 
         System.out.println("Введите срок вклада в годах:");
 
-        checkInputUser(scanner,DepositCalculator.PATTER_INTEGER, "Введите целое число больше 0!");
+        checkInputUser(scanner, DepositCalculator.PATTER_INTEGER, "Введите целое число больше 0!");
         int period = scanner.nextInt();
 
         System.out.println("Выберите тип вклада, 1 - вклад с обычным процентом, 2 - вклад с капитализацией:");
 
-        checkInputUser(scanner,DepositCalculator.PATTER_INTEGER, "Введите целое число больше 0!");
+        checkInputUser(scanner, DepositCalculator.PATTER_INTEGER, "Введите целое число больше 0!");
         int action = scanner.nextInt();
 
         Double finishSum = depositCalculator.calculateFinishSum(action, amount, 0.06, period);
